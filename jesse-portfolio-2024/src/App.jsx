@@ -1,22 +1,24 @@
+/* eslint-disable react/no-unescaped-entities */
 import "./App.css";
+import { Flex, Text, Button } from "@radix-ui/themes";
 import { motion } from "framer-motion";
 
 function App() {
   return (
     <>
-      <motion.div whileHover={{ scale: 1.2 }}>
-        <div style={{ cursor: "default" }}>
-          Welcome
-          <div style={{ fontSize: "100px", fontWeight: "700" }}>
-            Jesse Stone
-          </div>
-          <div style={{ fontWeight: "100" }}>This is my website.</div>
-        </div>
-        <div></div>
-      </motion.div>
-      <motion.button>Click me!</motion.button>
+      <Flex direction="column" align={"center"} gap="2">
+        <Text size={"9"}>Hello!</Text>
+        <motion.div
+          className="test-font-override"
+          whileHover={{
+            scale: 1.2,
+            transition: { duration: 1 },
+          }}
+        >
+          <Button>Let's go</Button>
+        </motion.div>
+      </Flex>
     </>
   );
 }
-
 export default App;
