@@ -14,9 +14,16 @@ function Hero() {
               src={jesseAvatar}
             ></Avatar.Image>
           </Avatar.Root>
+
           <Text size={"9"} align={"center"} style={{ fontWeight: "900" }}>
             Experienced web developer specializing in{" "}
             <span className="Gradient">ReactJS</span>
+            <span>.</span>
+          </Text>
+          <Text size={"5"} align={"center"} weight={"light"} mt={"4"}>
+            Some bullshit about how great I am, all the made up crap I can do
+            and have done, and also how big my yammer is - I will deliver
+            results with said yammer that I mentioned preveriously.
           </Text>
         </Flex>
       </Container>
