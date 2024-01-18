@@ -1,4 +1,6 @@
 import { Container, Flex, Text } from "@radix-ui/themes";
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
+
 import "../App.css";
 import * as Avatar from "@radix-ui/react-avatar";
 import jesseAvatar from "/Users/jessestone/Jesse-Portfolio-2024/jesse-portfolio-2024/src/assets/JesseAvatar.jpeg";
@@ -20,11 +22,27 @@ function Hero() {
             <span className="Gradient">ReactJS</span>
             <span>.</span>
           </Text>
-          <Text size={"5"} align={"center"} weight={"light"} mt={"4"}>
+          <Text
+            size={"5"}
+            align={"center"}
+            weight={"light"}
+            mt={"4"}
+            style={{ opacity: "90%" }}
+          >
             Some bullshit about how great I am, all the made up crap I can do
             and have done, and also how big my yammer is - I will deliver
             results with said yammer that I mentioned preveriously.
           </Text>
+
+          <Flex
+            justify={"space-between"}
+            align={"center"}
+            mt={"3"}
+            width={"50%"}
+          >
+            <GitHubLogoIcon style={{ height: "35px", width: "35px" }} />
+            <LinkedInLogoIcon style={{ height: "35px", width: "35px" }} />
+          </Flex>
         </Flex>
       </Container>
     </>
