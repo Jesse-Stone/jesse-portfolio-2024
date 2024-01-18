@@ -19,7 +19,7 @@ function AvatarLinks() {
           <Text>Github</Text>
           <ExternalLinkIcon />
         </Flex>
-        <Flex Avataralign={"center"} gap={"2"}>
+        <Flex align={"center"} gap={"2"}>
           <LinkedInLogoIcon style={{ height: "20px", width: "20px" }} />
           <Text>LinkedIn</Text>
           <ExternalLinkIcon />
