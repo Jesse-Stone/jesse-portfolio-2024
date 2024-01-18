@@ -14,12 +14,26 @@ function AvatarLinks() {
         <Avatar.Image className="AvatarImage" src={jesseAvatar}></Avatar.Image>
       </Avatar.Root>
       <Flex align={"center"} gap={"5"}>
-        <Flex align={"center"} gap={"2"}>
+        <Flex
+          onClick={() =>
+            window.open("https://github.com/Jesse-Stone/", "_blank")
+          }
+          align={"center"}
+          gap={"2"}
+          style={{ cursor: "pointer" }}
+        >
           <GitHubLogoIcon style={{ height: "20px", width: "20px" }} />
           <Text>Github</Text>
           <ExternalLinkIcon />
         </Flex>
-        <Flex align={"center"} gap={"2"}>
+        <Flex
+          onClick={() =>
+            window.open("https://www.linkedin.com/in/jesse-c-stone/", "_blank")
+          }
+          align={"center"}
+          gap={"2"}
+          style={{ cursor: "pointer" }}
+        >
           <LinkedInLogoIcon style={{ height: "20px", width: "20px" }} />
           <Text>LinkedIn</Text>
           <ExternalLinkIcon />
