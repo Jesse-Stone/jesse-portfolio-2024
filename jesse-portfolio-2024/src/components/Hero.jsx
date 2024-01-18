@@ -17,8 +17,7 @@ function Hero() {
         </Text>
         <Flex direction={"column"}>
           <Text size={"9"} mt={"2"} style={{ fontWeight: "300" }}>
-            Experienced web developer specializing in{" "}
-            <span className="Gradient">ReactJS</span>
+            Software Engineer at <span className="Gradient">Ibotta</span>
             <span>.</span>
           </Text>
           <Text size={"5"} weight={"light"} mt={"4"} style={{ opacity: "90%" }}>

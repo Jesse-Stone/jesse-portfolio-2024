@@ -2,14 +2,16 @@
 @import '@radix-ui/colors/violet.css';
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap');
 #root {
-  max-width: 2560px;
+  max-width: 1920px;
   padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .wrapper{
   display: grid;
   grid-template-columns: 50em 1fr;
-  grid-gap: 4em;
+  grid-gap: 10em;
   align-items: baseline;
 }
 
@@ -19,7 +21,8 @@
 }
 
 .Gradient{
-  background-image: radial-gradient(#fff200, #ff0048);
+  background-image: radial-gradient(#ff00dd, #ffd8f4);
+  font-weight: 700;
   /* background: linear-gradient(to right, #ffffff 0%, #ffffff 5%, #0B132A 5%, #0B132A 100%); */
   background-size: 100%;
   background-clip: text;
