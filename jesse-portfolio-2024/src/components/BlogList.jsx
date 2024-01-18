@@ -1,13 +1,12 @@
-import "../App.css";
 import { Card, Flex, Text } from "@radix-ui/themes";
-import ProjectListData from "../data/ProjectsListData";
+import BlogListData from "../data/BlogListData";
 import { motion } from "framer-motion";
 
-function ProjectsList() {
+function BlogList() {
   return (
     <>
       <Flex direction={"column"} gap={"3"}>
-        {ProjectListData.map((project) => (
+        {BlogListData.map((blog) => (
           <motion.div
             whileHover={{
               scale: 1.1,
@@ -15,7 +14,7 @@ function ProjectsList() {
               cursor: "pointer",
             }}
             whileTap={{ scale: 0.9 }}
-            key={project.index}
+            key={blog.index}
           >
             <Card
               style={{ maxWidth: 500, borderColor: "grey", padding: "10px" }}
@@ -29,13 +28,13 @@ function ProjectsList() {
                     fontFamily: ["Josefin Sans", "sans-serif"],
                   }}
                 >
-                  {project.languages.toUpperCase()}
+                  {blog.name.toUpperCase()}
                 </Text>
                 <Text size={"6"} weight={"bold"}>
-                  {project.name}
+                  {blog.name}
                 </Text>
                 <Text size="1" style={{ color: "grey", fontWeight: "800" }}>
-                  {project.description}
+                  {blog.date}
                 </Text>
               </Flex>
             </Card>
@@ -46,4 +45,4 @@ function ProjectsList() {
   );
 }
 
-export default ProjectsList;
+export default BlogList;

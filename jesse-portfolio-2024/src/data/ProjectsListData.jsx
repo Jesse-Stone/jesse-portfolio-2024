@@ -5,19 +5,20 @@ const ProjectListData = [
     description: "I distilled farts using AI/ML",
   },
   {
-    name: "Second Project",
+    name: "ChatDPT",
     languages: "Typescript",
     description: "LLM that measures weiner sizes",
   },
   {
-    name: "Third Project",
+    name: "PP Shootah",
     languages: "Typescript",
     description: "Game where you pee as far as you can",
   },
   {
-    name: "Third Project",
+    name: "TrampoDog",
     languages: "Python",
-    description: "Game where you pee as far as you can",
+    description:
+      "Model that measures how high a given dog will jump on a trampoline",
   },
   {
     name: "Third Project",
