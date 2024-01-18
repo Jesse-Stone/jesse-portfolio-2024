@@ -17,9 +17,7 @@ function ProjectsList() {
             whileTap={{ scale: 0.9 }}
             key={project.index}
           >
-            <Card
-              style={{ maxWidth: 500, borderColor: "grey", padding: "10px" }}
-            >
+            <Card style={{ borderColor: "grey", padding: "10px" }}>
               <Flex direction={"column"} gap={"2"}>
                 <Text
                   size={"1"}
