@@ -1,6 +1,6 @@
 @import '@radix-ui/colors/black-alpha.css';
 @import '@radix-ui/colors/violet.css';
-
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap');
 #root {
   max-width: 2560px;
   padding: 2rem;
@@ -10,6 +10,7 @@
   background-image: radial-gradient(#fff200, #ff0048);
   /* background: linear-gradient(to right, #ffffff 0%, #ffffff 5%, #0B132A 5%, #0B132A 100%); */
   background-size: 100%;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent; 
@@ -23,8 +24,8 @@
   vertical-align: middle;
   overflow: hidden;
   user-select: none;
-  width: 90px;
-  height: 90px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   background-color: var(--black-a3);
 }
@@ -47,4 +48,9 @@
   font-size: 15px;
   line-height: 1;
   font-weight: 500;
+}
+
+.Hero__Name{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 900;
 }
