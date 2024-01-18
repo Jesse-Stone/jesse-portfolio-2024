@@ -3,23 +3,23 @@ import * as Avatar from "@radix-ui/react-avatar";
 import { motion } from "framer-motion";
 import { Container, Flex, Text } from "@radix-ui/themes";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
-import jesseAvatar from "/Users/jessestone/Jesse-Portfolio-2024/jesse-portfolio-2024/src/assets/JesseAvatar.jpeg";
+import jesseAvatar from "../assets/JesseAvatar.jpeg";
 
 function Hero() {
   return (
     <>
       <Container size={"3"}>
         <Flex justify={"center"} direction={"column"} align={"center"}>
-          <Avatar.Root className="AvatarRoot">
+          <Avatar.Root className='AvatarRoot'>
             <Avatar.Image
-              className="AvatarImage"
+              className='AvatarImage'
               src={jesseAvatar}
             ></Avatar.Image>
           </Avatar.Root>
 
           <Text size={"9"} align={"center"} style={{ fontWeight: "900" }}>
             Experienced web developer specializing in{" "}
-            <span className="Gradient">ReactJS</span>
+            <span className='Gradient'>ReactJS</span>
             <span>.</span>
           </Text>
           <Text
