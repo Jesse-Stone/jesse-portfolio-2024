@@ -6,6 +6,18 @@
   padding: 2rem;
 }
 
+.wrapper{
+  display: grid;
+  grid-template-columns: 50em 1fr;
+  grid-gap: 4em;
+  align-items: baseline;
+}
+
+.title {
+  position: sticky;
+  top: 3rem;
+}
+
 .Gradient{
   background-image: radial-gradient(#fff200, #ff0048);
   /* background: linear-gradient(to right, #ffffff 0%, #ffffff 5%, #0B132A 5%, #0B132A 100%); */
