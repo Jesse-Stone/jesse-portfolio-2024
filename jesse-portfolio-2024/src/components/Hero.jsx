@@ -1,8 +1,8 @@
-import { Container, Flex, Text } from "@radix-ui/themes";
-import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
-
 import "../App.css";
 import * as Avatar from "@radix-ui/react-avatar";
+import { motion } from "framer-motion";
+import { Container, Flex, Text } from "@radix-ui/themes";
+import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
 import jesseAvatar from "/Users/jessestone/Jesse-Portfolio-2024/jesse-portfolio-2024/src/assets/JesseAvatar.jpeg";
 
 function Hero() {

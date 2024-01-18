@@ -7,7 +7,8 @@
 }
 
 .Gradient{
-  background-image: linear-gradient(45deg, #fff200, #ff0048);
+  background-image: radial-gradient(#fff200, #ff0048);
+  /* background: linear-gradient(to right, #ffffff 0%, #ffffff 5%, #0B132A 5%, #0B132A 100%); */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
