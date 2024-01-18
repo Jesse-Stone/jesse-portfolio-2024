@@ -2,7 +2,7 @@
 @import '@radix-ui/colors/violet.css';
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap');
 #root {
-  max-width: 1920px;
+  max-width: 1440px;
   padding: 2rem;
   margin-left: auto;
   margin-right: auto;
