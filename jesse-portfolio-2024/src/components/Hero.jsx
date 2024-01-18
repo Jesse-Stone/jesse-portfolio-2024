@@ -4,7 +4,7 @@ import { Flex, Text } from "@radix-ui/themes";
 function Hero() {
   return (
     <>
-      <Flex direction={"column"} style={{ maxWidth: "700px", height: "500px" }}>
+      <Flex direction={"column"} style={{ maxWidth: "700px", height: "250px" }}>
         <Text className="Hero__Name" size={"9"}>
           Jesse Stone
         </Text>

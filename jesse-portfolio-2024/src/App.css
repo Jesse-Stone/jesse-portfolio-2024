@@ -8,6 +8,12 @@
   margin-right: auto;
 }
 
+#navbar-progress {
+  height: 3px;
+  width: 80%;
+  transform-origin: 0%;
+}
+
 .wrapper{
   display: grid;
   grid-template-columns: 50em 1fr;
