@@ -19,10 +19,10 @@ function BlogList() {
             >
               <Card
                 style={{
-                  height: "200px",
-                  width: "200px",
+                  height: "12rem",
+                  width: "auto",
                   borderColor: "grey",
-                  padding: "30px",
+                  padding: "1rem",
                 }}
               >
                 <Flex direction={"column"} gap={"2"}>
