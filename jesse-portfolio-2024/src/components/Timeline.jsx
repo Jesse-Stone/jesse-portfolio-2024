@@ -1,5 +1,5 @@
+import { Flex, Text } from "@radix-ui/themes";
 import "../App.css";
-
 import { motion, useScroll, useSpring } from "framer-motion";
 
 function Timeline() {
@@ -10,15 +10,28 @@ function Timeline() {
   });
 
   return (
-    <motion.div
-      id="navbar-progress"
-      animate={{
-        backgroundColor: "#ff00dd",
-      }}
-      style={{
-        scaleX: scaleX,
-      }}
-    />
+    <>
+      <Flex justify={"between"} style={{ width: "50%" }}>
+        <Text size={"5"} weight={"light"}>
+          Projects
+        </Text>
+        <Text size={"5"} weight={"light"}>
+          Content
+        </Text>
+        <Text size={"5"} weight={"light"}>
+          Career
+        </Text>
+      </Flex>
+      <motion.div
+        id="navbar-progress"
+        animate={{
+          backgroundColor: "#ff00dd",
+        }}
+        style={{
+          scaleX: scaleX,
+        }}
+      />
+    </>
   );
 }
 
