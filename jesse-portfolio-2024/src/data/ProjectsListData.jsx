@@ -7,7 +7,7 @@ const ProjectListData = [
   {
     name: "ChatDPT",
     languages: "Typescript",
-    description: "LLM that measures wiener sizes",
+    description: "LLM that measures the size of your future dog",
   },
   {
     name: "PP Shootah",

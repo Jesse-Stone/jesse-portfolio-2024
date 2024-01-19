@@ -2,7 +2,7 @@ const BlogListData = [
   {
     name: "Austin, Texas",
     date: "1-1-2024",
-    title: "TED x Talk on Farts and how to seduce women with them",
+    title: "TED x Talk on Farts and how to seduce and influence people with them",
     link: "",
   },
   {
