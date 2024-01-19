@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { Flex, Text } from "@radix-ui/themes";
+import { Box, Flex, Text } from "@radix-ui/themes";
 import "../App.css";
 import { motion, useInView, useScroll, useSpring } from "framer-motion";
 import { useRef } from "react";
@@ -18,8 +18,7 @@ function Timeline(props) {
 
   return (
     <>
-      <Flex justify={"between"} style={{ width: "40%" }}>
-        <motion.div
+      {/* <motion.div
           style={{
             transform: projectView ? "none" : "translateX(-200px)",
             opacity: projectView ? 1 : 0,
@@ -63,7 +62,8 @@ function Timeline(props) {
             marginTop: ".125rem",
             border: 0,
           }}
-        ></div>
+        ></div> */}
+      <Box style={{ width: "80%" }}>
         <motion.div
           id="navbar-progress"
           animate={{
@@ -73,7 +73,7 @@ function Timeline(props) {
             scaleX: scaleX,
           }}
         />
-      </Flex>
+      </Box>
     </>
   );
 }
