@@ -15,7 +15,7 @@ function App() {
           <Flex direction={"column"}>
             <Hero />
             <Timeline />
-            <Box mt={"5"}>
+            <Box style={{ marginTop: "1rem" }}>
               <AvatarLinks />
             </Box>
           </Flex>

@@ -3,20 +3,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap');
 #root {
   max-width: 1440px;
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
 
 #navbar-progress {
-  height: 3px;
+  height: .25rem;
+  margin-top: .125rem;
   width: 50%;
   transform-origin: 0%;
 }
 
 .wrapper{
   display: grid;
-  grid-template-columns: 50em 1fr;
+  grid-template-columns: 50rem 1fr;
   /* grid-gap: 2em; */
   align-items: baseline;
 }
