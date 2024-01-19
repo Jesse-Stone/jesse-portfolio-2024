@@ -18,7 +18,6 @@ function Timeline(props) {
 
   return (
     <>
-      {console.log(scaleX.get())}
       <Flex justify={"between"} style={{ width: "40%" }}>
         <motion.div
           style={{
@@ -35,7 +34,7 @@ function Timeline(props) {
           style={{
             transform: blogView ? "none" : "translateX(-200px)",
             opacity: blogView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            transition: "all .5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
           <Text size={"5"} weight={"bold"}>
@@ -47,7 +46,7 @@ function Timeline(props) {
           style={{
             transform: careerView ? "none" : "translateX(-200px)",
             opacity: careerView ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+            transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
           }}
         >
           <Text size={"5"} weight={"bold"}>
@@ -55,15 +54,26 @@ function Timeline(props) {
           </Text>
         </motion.div>
       </Flex>
-      <motion.div
-        id="navbar-progress"
-        animate={{
-          backgroundColor: "#ff00dd",
-        }}
-        style={{
-          scaleX: scaleX,
-        }}
-      />
+      <Flex align={"center"}>
+        <div
+          style={{
+            height: ".25rem",
+            width: "80px",
+            background: "#ff00dd",
+            marginTop: ".125rem",
+            border: 0,
+          }}
+        ></div>
+        <motion.div
+          id="navbar-progress"
+          animate={{
+            backgroundColor: "#ff00dd",
+          }}
+          style={{
+            scaleX: scaleX,
+          }}
+        />
+      </Flex>
     </>
   );
 }
