@@ -7,7 +7,7 @@ const ProjectListData = [
   {
     name: "ChatDPT",
     languages: "Typescript",
-    description: "LLM that measures weiner sizes",
+    description: "LLM that measures wiener sizes",
   },
   {
     name: "PP Shootah",
@@ -21,39 +21,19 @@ const ProjectListData = [
       "Model that measures how high a given dog will jump on a trampoline",
   },
   {
-    name: "Third Project",
+    name: "Portfolio Layout",
     languages: "Javascript",
-    description: "Game where you pee as far as you can",
+    description: "Youre literally looking at it",
   },
   {
-    name: "Third Project",
-    languages: "Python / Unity",
-    description: "Game where you pee as far as you can",
+    name: "Something else made up",
+    languages: "Assembly",
+    description: "I dunno just make something up in your head",
   },
   {
-    name: "Third Project",
-    languages: "Javascript",
-    description: "Game where you pee as far as you can",
-  },
-  {
-    name: "Third Project",
-    languages: "Python / Unity",
-    description: "Game where you pee as far as you can",
-  },
-  {
-    name: "Third Project",
-    languages: "Python / Unity",
-    description: "Game where you pee as far as you can",
-  },
-  {
-    name: "Third Project",
-    languages: "Python / Unity",
-    description: "Game where you pee as far as you can",
-  },
-  {
-    name: "Third Project",
-    languages: "Python / Unity",
-    description: "Game where you pee as far as you can",
+    name: "First Project",
+    languages: "Visual Basic",
+    description: "Hacked the keyboards in our 10th grade VB class to light up",
   },
 ];
 

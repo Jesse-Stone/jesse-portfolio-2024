@@ -20,11 +20,9 @@ function App() {
             </Box>
           </Flex>
         </Box>
-        <Flex direction={"column"} align={"end"}>
-          <Box>
-            <ProjectsList />
-            <BlogList />
-          </Box>
+        <Flex direction={"column"} align={"end"} gap={"3"}>
+          <ProjectsList />
+          <BlogList />
         </Flex>
       </Box>
     </>

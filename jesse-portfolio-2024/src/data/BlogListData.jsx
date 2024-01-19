@@ -1,38 +1,27 @@
 const BlogListData = [
   {
-    name: "Lunar Pooper",
-    date: "C#",
-    title: "I distilled farts using AI/ML",
+    name: "Austin, Texas",
+    date: "1-1-2024",
+    title: "TED x Talk on Farts and how to seduce women with them",
     link: "",
   },
   {
-    name: "Lunar Pooper",
-    date: "C#",
-    title: "I distilled farts using AI/ML",
+    name: "Miami, Florida",
+    date: "12-11-2023",
+    title: "How to identify fake Dead Sea Salt using AI",
     link: "",
   },
   {
-    name: "Lunar Pooper",
-    date: "C#",
-    title: "I distilled farts using AI/ML",
+    name: "Rome, Italy",
+    date: "3-1-2020",
+    title: "Why Italy is Hot",
     link: "",
   },
   {
-    name: "Lunar Pooper",
-    date: "C#",
-    title: "I distilled farts using AI/ML",
+    name: "Tel-Aviv, Israel",
+    date: "4-12-2015",
+    title: "Hummus: The Great Equalizer?",
     link: "",
-  },
-  {
-    name: "Lunar Pooper",
-    date: "C#",
-    title: "I distilled farts using AI/ML",
-    link: "",
-  },
-  {
-    name: "Third Project",
-    languages: "Python / Unity",
-    description: "Game where you pee as far as you can",
   },
 ];
 

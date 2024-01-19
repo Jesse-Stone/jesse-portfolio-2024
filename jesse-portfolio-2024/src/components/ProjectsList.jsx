@@ -7,7 +7,7 @@ function ProjectsList() {
   return (
     <>
       <Flex direction={"column"} gap={"3"}>
-        {ProjectListData.map((project) => (
+        {ProjectListData.map((project, index) => (
           <motion.div
             whileHover={{
               scale: 1.1,
@@ -15,7 +15,7 @@ function ProjectsList() {
               cursor: "pointer",
             }}
             whileTap={{ scale: 0.9 }}
-            key={project.index}
+            key={index}
           >
             <Card style={{ borderColor: "grey", padding: "10px" }}>
               <Flex direction={"column"} gap={"2"}>
