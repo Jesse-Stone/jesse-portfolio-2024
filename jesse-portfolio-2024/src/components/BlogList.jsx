@@ -1,16 +1,10 @@
 import { Card, Flex, Grid, Text } from "@radix-ui/themes";
 import BlogListData from "../data/BlogListData";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 
 function BlogList() {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
-  console.log(isInView);
-
   return (
     <>
-      <div ref={ref} />
       <Flex direction={"column"} gap={"3"}>
         <Grid columns={"2"} gap={"4"}>
           {BlogListData.map((blog, index) => (

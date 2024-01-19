@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "../App.css";
 import { Card, Flex, Text } from "@radix-ui/themes";
 import ProjectListData from "../data/ProjectsListData";

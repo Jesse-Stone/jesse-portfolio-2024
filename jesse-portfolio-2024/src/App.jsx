@@ -6,23 +6,33 @@ import ProjectsList from "./components/ProjectsList";
 import AvatarLinks from "./components/AvatarLinks";
 import Timeline from "./components/Timeline";
 import BlogList from "./components/BlogList";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 function App() {
+  const refBlog = useRef(null);
+  const isBlogInView = useInView(refBlog);
+  const refProject = useRef(null);
+  const isProjectInView = useInView(refProject);
   return (
     <>
       <Box className="wrapper">
         <Box className="title">
           <Flex direction={"column"}>
             <Hero />
-            <Timeline />
+            <Timeline projectView={isProjectInView} blogView={isBlogInView} />
             <Box style={{ marginTop: "1rem" }}>
               <AvatarLinks />
             </Box>
           </Flex>
         </Box>
         <Flex direction={"column"} align={"end"} gap={"3"}>
-          <ProjectsList />
-          <BlogList />
+          <div ref={refProject}>
+            <ProjectsList />
+          </div>
+          <div ref={refBlog}>
+            <BlogList />
+          </div>
         </Flex>
       </Box>
     </>
