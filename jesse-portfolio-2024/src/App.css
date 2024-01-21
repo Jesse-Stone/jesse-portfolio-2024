@@ -4,6 +4,7 @@
 #root {
   max-width: 1440px;
   padding-top: 2rem;
+  padding-bottom: 2rem;
   padding-left: 6rem;
   padding-right: 6rem;
   margin-left: auto;
@@ -27,6 +28,7 @@
 .title {
   position: sticky;
   top: 3rem;
+  height: 90vh
 }
 
 .Gradient{

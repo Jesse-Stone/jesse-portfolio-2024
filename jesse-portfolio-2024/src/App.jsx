@@ -18,10 +18,10 @@ function App() {
     <>
       <Box className="wrapper">
         <Box className="title">
-          <Flex direction={"column"}>
+          <Flex direction={"column"} style={{ height: "100%" }}>
             <Hero />
             <Timeline projectView={isProjectInView} blogView={isBlogInView} />
-            <Box style={{ marginTop: "1rem" }}>
+            <Box style={{ marginTop: "auto" }}>
               <AvatarLinks />
             </Box>
           </Flex>
