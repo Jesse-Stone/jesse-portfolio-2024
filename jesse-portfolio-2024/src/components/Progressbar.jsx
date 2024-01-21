@@ -18,7 +18,7 @@ function ProgressBar() {
   return (
     <>
       <Box>
-        <Box style={{ width: "100%" }}>
+        <Box style={{ width: "90%" }}>
           <motion.div
             id="navbar-progress"
             animate={{
@@ -29,7 +29,7 @@ function ProgressBar() {
             }}
           />
         </Box>
-        <Box style={{ width: "100%" }}>
+        <Box style={{ width: "90%" }}>
           <motion.div
             id="navbar-progress"
             animate={{
@@ -40,7 +40,7 @@ function ProgressBar() {
             }}
           />
         </Box>
-        <Box style={{ width: "100%" }}>
+        <Box style={{ width: "90%" }}>
           <motion.div
             id="navbar-progress"
             animate={{

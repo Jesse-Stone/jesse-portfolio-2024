@@ -8,41 +8,36 @@ function Timeline(props) {
   const blogView = props.blogView;
   const projectView = props.projectView;
   const careerView = props.careerView;
-  const ref = useRef(null);
 
   return (
     <>
       <motion.div
         style={{
-          // transform: projectView && !blogView ? "none" : "translateX(-200px)",
           opacity: projectView && !blogView ? 1 : 0.3,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+          transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
-        <Text size={"5"} weight={"bold"}>
+        <Text size={"6"} weight={"bold"}>
           Projects
         </Text>
       </motion.div>
       <motion.div
         style={{
-          // transform: blogView ? "none" : "translateX(-200px)",
-          opacity: blogView ? 1 : 0.3,
+          opacity: blogView && !careerView ? 1 : 0.3,
           transition: "all .5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
-        <Text size={"5"} weight={"bold"}>
+        <Text size={"6"} weight={"bold"}>
           Blogs
         </Text>
       </motion.div>
       <motion.div
-        ref={ref}
         style={{
-          transform: careerView ? "none" : "translateX(-200px)",
-          opacity: careerView ? 1 : 0,
-          transition: "all 0.3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s",
+          opacity: careerView ? 1 : 0.3,
+          transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
-        <Text size={"5"} weight={"bold"}>
+        <Text size={"6"} weight={"bold"}>
           Career
         </Text>
       </motion.div>
