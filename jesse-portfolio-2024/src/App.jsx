@@ -10,14 +10,17 @@ import { useRef } from "react";
 import { useInView } from "framer-motion";
 import ProgressBar from "./components/Progressbar";
 import Career from "./components/Career";
+import Music from "./components/Music";
 
 function App() {
   const refBlog = useRef(null);
   const refProject = useRef(null);
   const refCareer = useRef(null);
+  const refMusic = useRef(null);
   const isBlogInView = useInView(refBlog);
   const isProjectInView = useInView(refProject);
   const isCareerInView = useInView(refCareer);
+  const isMusicInView = useInView(refMusic);
 
   return (
     <>
@@ -31,6 +34,7 @@ function App() {
                 projectView={isProjectInView}
                 blogView={isBlogInView}
                 careerView={isCareerInView}
+                musicView={isMusicInView}
               />
             </Box>
             <Box style={{ marginTop: "auto" }}>
@@ -47,6 +51,9 @@ function App() {
           </div>
           <div ref={refCareer}>
             <Career />
+          </div>
+          <div ref={refMusic}>
+            <Music />
           </div>
         </Flex>
       </Box>

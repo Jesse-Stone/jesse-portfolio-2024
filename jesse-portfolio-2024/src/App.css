@@ -21,7 +21,6 @@
 .wrapper{
   display: grid;
   grid-template-columns: 45rem 1fr;
-  grid-gap: 2em;
   align-items: baseline;
 }
 

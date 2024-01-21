@@ -1,13 +1,13 @@
 /* eslint-disable react/prop-types */
-import { Box, Flex, Text } from "@radix-ui/themes";
+import { Text } from "@radix-ui/themes";
 import "../App.css";
 import { motion } from "framer-motion";
-import { useRef } from "react";
 
 function Timeline(props) {
   const blogView = props.blogView;
   const projectView = props.projectView;
   const careerView = props.careerView;
+  const musicView = props.musicView;
 
   return (
     <>
@@ -33,12 +33,22 @@ function Timeline(props) {
       </motion.div>
       <motion.div
         style={{
-          opacity: careerView ? 1 : 0.3,
+          opacity: careerView && !musicView ? 1 : 0.3,
           transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
         <Text size={"6"} weight={"bold"}>
           Career
+        </Text>
+      </motion.div>
+      <motion.div
+        style={{
+          opacity: musicView ? 1 : 0.3,
+          transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+        }}
+      >
+        <Text size={"6"} weight={"bold"}>
+          Music
         </Text>
       </motion.div>
     </>
