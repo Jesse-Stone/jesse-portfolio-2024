@@ -12,8 +12,8 @@
 }
 
 #navbar-progress {
-  height: .25rem;
-  margin-top: .125rem;
+  height: .1rem;
+  /* margin-top: .125rem; */
   width: 100%;
   transform-origin: 0%;
 }
@@ -32,7 +32,7 @@
 }
 
 .Gradient{
-  background-image: radial-gradient(#ff00dd, #ffd8f4);
+  background-image: radial-gradient(#DF2A63, #fd8ede);
   font-weight: 700;
   background-size: 100%;
   background-clip: text;

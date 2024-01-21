@@ -8,6 +8,7 @@ import Timeline from "./components/Timeline";
 import BlogList from "./components/BlogList";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import ProgressBar from "./components/Progressbar";
 
 function App() {
   const refBlog = useRef(null);
@@ -20,6 +21,7 @@ function App() {
         <Box className="title">
           <Flex direction={"column"} style={{ height: "100%" }}>
             <Hero />
+            <ProgressBar />
             <Timeline projectView={isProjectInView} blogView={isBlogInView} />
             <Box style={{ marginTop: "auto" }}>
               <AvatarLinks />
