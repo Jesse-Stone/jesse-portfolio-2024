@@ -13,7 +13,7 @@ function Timeline(props) {
     <>
       <motion.div
         style={{
-          opacity: projectView && !blogView ? 1 : 0.3,
+          opacity: projectView ? 1 : 0.3,
           transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
@@ -23,7 +23,7 @@ function Timeline(props) {
       </motion.div>
       <motion.div
         style={{
-          opacity: blogView && !careerView ? 1 : 0.3,
+          opacity: blogView ? 1 : 0.3,
           transition: "all .5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
@@ -33,7 +33,7 @@ function Timeline(props) {
       </motion.div>
       <motion.div
         style={{
-          opacity: careerView && !musicView ? 1 : 0.3,
+          opacity: careerView ? 1 : 0.3,
           transition: "all 0.5s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
         }}
       >
